@@ -23,9 +23,42 @@
         </div>
     </nav>
 
-    <!-- Judul Halaman di body, sebelah kiri, ukuran kecil -->
+    <!-- Judul Halaman dan Tombol Tambah Produk -->
     <div class="container mt-3">
-        <h3 class="text-start">Halaman Produk</h3>
+        <div class="row align-items-center">
+            <div class="col">
+                <h1>Halaman Produk</h1>
+            </div>
+            <div class="col-auto">
+                <a href="/produk/tambah" class="btn btn-primary">Tambah Produk</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabel Produk -->
+    <div class="container mt-3">
+        <div class="table-responsive">
+            <table class="table table-primary table-striped table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>Kode Produk</th>
+                        <th>Nama Produk</th>
+                        <th>Jenis Produk</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($produk as $item)
+                    <tr>
+                        <td>{{ $item['kode'] }}</td>
+                        <td>{{ $item['nama'] }}</td>
+                        <td>{{ $item['jenis'] }}</td>
+                        <td>Rp {{ number_format($item['harga'], 0, ',', '.') }}</td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- Offcanvas Sidebar di kanan -->
