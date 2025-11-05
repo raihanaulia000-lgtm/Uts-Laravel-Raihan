@@ -47,10 +47,9 @@
                     <label for="jenis_produk" class="form-label">Jenis Produk</label>
                     <select class="form-select" id="jenis_produk" name="jenis_produk" required>
                         <option value="" disabled selected>Pilih Produk</option>
-                        <option value="Alat tulis">Alat tulis</option>
-                        <option value="Elektronik">Elektronik</option>
-                        <option value="Pakaian">Pakaian</option>
-                        <option value="Makanan">Makanan</option>
+                        @foreach ($jenisProduk as $item)
+                        <option value="{{ $item }}">{{ $item }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>

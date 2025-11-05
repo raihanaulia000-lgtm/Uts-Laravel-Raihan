@@ -10,4 +10,7 @@ Route::get('/produk', function () {
     ];
     return view('produk', compact('produk'));
 });
-Route::get('/produk/tambah', fn() => view('tambah_produk'));
+Route::get('/produk/tambah', function () {
+    $jenisProduk = ['Alat tulis', 'Elektronik', 'Sembako'];
+    return view('tambah_produk', ['jenisProduk' => $jenisProduk]);
+});
