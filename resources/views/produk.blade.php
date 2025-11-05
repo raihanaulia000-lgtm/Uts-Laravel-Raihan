@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UTS Laravel</title>
+    <title>UTS Laravel - Produk</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
@@ -25,7 +25,7 @@
 
     <!-- Judul Halaman di body, sebelah kiri, ukuran kecil -->
     <div class="container mt-3">
-        <h3 class="text-start">Halaman Home</h3>
+        <h3 class="text-start">Halaman Produk</h3>
     </div>
 
     <!-- Offcanvas Sidebar di kanan -->
