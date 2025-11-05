@@ -10,3 +10,4 @@ Route::get('/produk', function () {
     ];
     return view('produk', compact('produk'));
 });
+Route::get('/produk/tambah', fn() => view('tambah_produk'));
